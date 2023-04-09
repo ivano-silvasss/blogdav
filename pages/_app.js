@@ -19,8 +19,14 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
           <Head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SDH5NR4B70"></script>
+              <script>
+                  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<div style="text-align:center;" id="96789-31"><script src="//ads.themoneytizer.com/s/gen.js?type=31"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=96789&formatId=31"></script></div>
+  gtag('config', 'G-SDH5NR4B70');
+</script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
